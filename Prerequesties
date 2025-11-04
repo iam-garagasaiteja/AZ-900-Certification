@@ -1,0 +1,71 @@
+### 💡 What is Microsoft Azure?
+
+* **Microsoft Azure** is a **cloud computing platform**.
+* It provides many online services that help companies build, run, and manage applications.
+* You can use Azure for:
+
+  * Hosting websites
+  * Running virtual machines
+  * Storing data
+  * Managing user accounts
+  * Using advanced services like **Artificial Intelligence (AI)** and **Internet of Things (IoT)**
+
+Azure can handle **simple tasks** (like hosting a website) and **complex solutions** (like global enterprise applications).
+
+---
+
+### 🎓 What is Azure Fundamentals?
+
+* **Azure Fundamentals** is a **beginner-level course** that teaches the basics of Microsoft Azure.
+
+* It consists of **three main learning paths**, each focusing on a key area:
+
+  1. **Cloud concepts**
+  2. **Azure services and architecture**
+  3. **Azure management and governance**
+
+* The course helps you understand:
+
+  * What cloud computing is
+  * What services Azure offers
+  * How Azure ensures security, compliance, and governance
+
+* It also includes **hands-on labs (sandbox)** where you can try creating resources in Azure for **free** — no need for a credit card.
+
+---
+
+### 🎯 Why Should You Learn Azure Fundamentals?
+
+You should take Azure Fundamentals if you:
+
+* Want to **understand cloud computing basics**
+* Are **interested in Microsoft Azure**
+* Want to **earn the AZ-900 certification**
+
+This course is perfect for:
+
+* Beginners with no technical experience
+* IT professionals wanting to build Azure knowledge
+
+---
+
+### 🧩 **About the AZ-900 Exam**
+
+**Exam Name:** Microsoft Certified: Azure Fundamentals
+**Purpose:** Tests your understanding of Azure basics.
+
+| Domain                                       | Weight in Exam |
+| -------------------------------------------- | -------------- |
+| 1️⃣ Describe cloud concepts                  | 25–30%         |
+| 2️⃣ Describe Azure architecture and services | 35–40%         |
+| 3️⃣ Describe Azure management and governance | 30–35%         |
+
+💡 The higher the percentage, the more questions from that topic.
+
+---
+
+### ✅ **In Summary**
+
+* **Azure** = Microsoft’s cloud platform for building and managing services online.
+* **Azure Fundamentals (AZ-900)** = Beginner course + certification that teaches the basics of Azure, cloud concepts, and governance.
+* It gives you **hands-on experience**, even if you have **no prior cloud experience**.
