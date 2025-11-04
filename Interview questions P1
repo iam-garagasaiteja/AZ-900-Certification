@@ -1,0 +1,222 @@
+Excellent 👏 — since you’re asking for **interview questions based on AZ-900 and Azure Fundamentals topics**, and you have **3+ years of experience**, I’ll give you:
+
+✅ **Real-world style Azure interview questions**
+✅ **Categorized by AZ-900 domains**
+✅ **With sample answers / explanation points** (so you can prepare smartly)
+
+---
+
+## ☁️ **1️⃣ Cloud Concepts (25–30%)**
+
+### 🔹 Q1. What is Cloud Computing?
+
+**Answer:**
+Cloud computing is the delivery of computing services like servers, storage, databases, networking, and software over the internet (“the cloud”).
+You pay only for what you use and can scale resources anytime.
+
+**Example:** Using Azure Virtual Machines instead of buying physical servers.
+
+---
+
+### 🔹 Q2. What are the main cloud deployment models?
+
+**Answer:**
+
+1. **Public Cloud** – Shared infrastructure (Azure, AWS, GCP).
+2. **Private Cloud** – Dedicated infrastructure for one organization.
+3. **Hybrid Cloud** – Combination of both, allows data and apps to move between them.
+
+---
+
+### 🔹 Q3. What are the advantages of cloud computing?
+
+* Cost-effective (Pay-as-you-go)
+* Scalability and elasticity
+* High availability and reliability
+* Global reach
+* Security and compliance
+
+---
+
+### 🔹 Q4. What are the main cloud service models?
+
+**Answer:**
+
+1. **IaaS (Infrastructure as a Service)** – You manage OS and apps.
+   *Example:* Azure Virtual Machines.
+2. **PaaS (Platform as a Service)** – You manage only your app and data.
+   *Example:* Azure App Service, Azure SQL Database.
+3. **SaaS (Software as a Service)** – Everything is managed by provider.
+   *Example:* Microsoft 365, Salesforce.
+
+---
+
+### 🔹 Q5. Explain the Shared Responsibility Model.
+
+**Answer:**
+Responsibilities are shared between cloud provider and customer.
+
+* **Provider:** Physical datacenter, network, servers.
+* **Customer:** Data, identity, access, device security.
+* Responsibility level changes depending on IaaS, PaaS, or SaaS.
+
+---
+
+## 🏗️ **2️⃣ Azure Architecture and Services (35–40%)**
+
+### 🔹 Q6. What are Azure Regions and Availability Zones?
+
+* **Region:** A geographical area (like East US, Central India) where Azure has datacenters.
+* **Availability Zones:** Separate datacenters within a region to ensure high availability and fault tolerance.
+
+---
+
+### 🔹 Q7. What is the difference between Azure Resource Group and Subscription?
+
+* **Subscription:** Logical container for billing and access control.
+* **Resource Group:** Logical container for grouping related resources (VMs, databases, etc.) in a project.
+
+---
+
+### 🔹 Q8. What is an Azure Virtual Machine (VM)?
+
+A Virtual Machine is a software-based emulation of a physical computer that runs in the cloud.
+You can choose OS, size, and manage it like your own server.
+
+---
+
+### 🔹 Q9. What is Azure Storage and its types?
+
+**Azure Storage Types:**
+
+1. **Blob Storage** – For unstructured data (images, videos, backups).
+2. **File Storage** – For shared files using SMB protocol.
+3. **Queue Storage** – For message-based communication between components.
+4. **Table Storage** – For NoSQL structured data.
+
+---
+
+### 🔹 Q10. Explain Azure Virtual Network (VNet).
+
+A **VNet** is like your own private network in Azure.
+It allows resources (VMs, services) to securely communicate with each other, on-premises networks, or the internet.
+
+---
+
+### 🔹 Q11. What are Azure App Services?
+
+App Service is a **PaaS** offering that allows you to host web apps, REST APIs, or mobile backends without managing infrastructure.
+
+---
+
+### 🔹 Q12. What is Azure SQL Database vs SQL on VM?
+
+* **Azure SQL Database:** Managed PaaS database — Microsoft handles patching and maintenance.
+* **SQL on VM:** IaaS — You install and manage SQL yourself.
+
+---
+
+### 🔹 Q13. What is Azure Active Directory (Azure AD)?
+
+Azure AD is Microsoft’s **identity and access management service**.
+It controls authentication and authorization for users, devices, and applications.
+
+---
+
+### 🔹 Q14. What is Azure Resource Manager (ARM)?
+
+ARM is the deployment and management service for Azure.
+It allows you to create, update, and delete resources using templates (JSON), PowerShell, or CLI.
+
+---
+
+## 🧩 **3️⃣ Azure Management and Governance (30–35%)**
+
+### 🔹 Q15. What are Azure Management Tools?
+
+1. **Azure Portal** – Web UI.
+2. **Azure PowerShell** – Command-line scripting.
+3. **Azure CLI** – Cross-platform command-line tool.
+4. **ARM Templates** – Infrastructure as code.
+
+---
+
+### 🔹 Q16. What is Azure Policy?
+
+Azure Policy helps enforce rules and compliance on resources.
+For example: Prevent creation of resources in non-approved regions.
+
+---
+
+### 🔹 Q17. What is Role-Based Access Control (RBAC)?
+
+RBAC allows you to assign **roles** (like Reader, Contributor, Owner) to users, groups, or apps to manage permissions on Azure resources.
+
+---
+
+### 🔹 Q18. What is Azure Cost Management?
+
+It helps you track, analyze, and control your cloud spending.
+You can set **budgets**, **alerts**, and view **cost breakdowns** by resource.
+
+---
+
+### 🔹 Q19. What is an Azure Subscription?
+
+It’s a logical container that holds your resources and defines **billing** and **access control** boundaries.
+
+---
+
+### 🔹 Q20. What is Azure Security Center (Defender for Cloud)?
+
+It provides **threat protection**, **vulnerability assessment**, and **security recommendations** across your Azure resources.
+
+---
+
+## ⚙️ **Bonus — Practical / Scenario-Based Questions**
+
+### 🔹 Q21. Your application needs to scale automatically based on demand. Which Azure feature will you use?
+
+**Answer:** Use **Azure Autoscale** (part of App Service or VM Scale Sets).
+
+---
+
+### 🔹 Q22. You want to store 10 TB of image data accessed via the internet. Which storage type fits best?
+
+**Answer:** **Azure Blob Storage (Hot Tier)** — optimized for frequently accessed unstructured data.
+
+---
+
+### 🔹 Q23. How do you secure data in Azure?
+
+* Use **Encryption at rest (Storage Service Encryption)**
+* Use **Encryption in transit (HTTPS/TLS)**
+* Manage keys in **Azure Key Vault**
+* Enable **RBAC and MFA** for access control
+
+---
+
+### 🔹 Q24. You want to host a web application without managing servers. Which service should you choose?
+
+**Answer:** **Azure App Service (PaaS)**
+
+---
+
+### 🔹 Q25. What is the difference between Azure AD and Active Directory?
+
+* **Active Directory (AD)** – On-premises identity service for Windows domains.
+* **Azure AD** – Cloud-based identity service for managing users and applications online (SaaS, Microsoft 365, etc.).
+
+---
+
+## 🧠 **Pro Tip for Interviews**
+
+For each question:
+
+1. **Define the concept clearly**
+2. **Add one real-life example**
+3. **Relate it to Azure services** (this shows hands-on understanding)
+
+---
+
+Would you like me to create a **PDF version** of these 25 questions (with short answers and space for notes) so you can use it as your **interview preparation sheet**?
