@@ -1,0 +1,84 @@
+☁️ What is the Shared Responsibility Model?
+
+The Shared Responsibility Model defines who is responsible for what in cloud computing —
+that is, which responsibilities are handled by the cloud provider (like Microsoft Azure) and which by you, the customer.
+
+In a traditional datacenter, your company does everything — from building security to software updates.
+But in the cloud, these responsibilities are shared.
+
+🧱 Provider vs. Consumer Responsibilities
+Cloud Provider (e.g., Microsoft Azure)	Customer (You / Organization)
+Physical datacenter (buildings, guards, etc.)	Data stored in the cloud
+Power, cooling, and hardware maintenance	Who can access your cloud resources
+Physical network and connectivity	Device security (laptops, phones)
+Physical hosts (servers)	Identity management (user accounts, MFA)
+⚙️ How It Changes with Cloud Service Type
+
+Now, the “shared” part depends on what type of cloud service you use:
+
+1️⃣ IaaS – Infrastructure as a Service
+
+You manage more.
+Provider gives you virtual hardware (VMs, storage, networking), but you handle everything above that — operating systems, apps, patches, and data.
+
+🧩 Example:
+You create a Virtual Machine (VM) in Azure.
+
+Azure (Provider) handles: physical servers, datacenter, and hypervisor.
+
+You (Customer) handle: installing Windows/Linux OS, updating it, installing software like SQL, and securing your data.
+
+👉 Think of it like renting a house — the owner provides the structure, but you furnish and maintain the inside.
+
+2️⃣ PaaS – Platform as a Service
+
+You manage less.
+Provider manages infrastructure and runtime environment — you only manage your application and data.
+
+🧩 Example:
+You use Azure SQL Database or Azure App Service.
+
+Azure maintains the OS, database engine, and patches.
+
+You only manage your database tables, schema, and data.
+
+👉 Think of it like renting a fully furnished apartment — you just bring your belongings and live; the landlord maintains the furniture and electricity.
+
+3️⃣ SaaS – Software as a Service
+
+Provider manages almost everything.
+You simply use the software through a web browser or app.
+
+🧩 Example:
+Using Microsoft 365 (Outlook, Teams, OneDrive) or Salesforce.
+
+Microsoft manages everything — servers, OS, app, and updates.
+
+You only manage your user accounts and data (like emails, files, etc.).
+
+👉 Think of it like staying in a hotel — the hotel takes care of cleaning, electricity, and maintenance; you just use the room.
+
+🧩 Summary Table
+Layer	On-Premises	IaaS	PaaS	SaaS
+Applications	You	You	You	Provider
+Data	You	You	You	You
+Runtime	You	You	Provider	Provider
+Operating System	You	You	Provider	Provider
+Virtualization	You	Provider	Provider	Provider
+Servers	You	Provider	Provider	Provider
+Storage	You	Provider	Provider	Provider
+Networking	You	Provider	Provider	Provider
+
+✅ As you move from On-Premises → IaaS → PaaS → SaaS,
+your responsibility decreases and the provider’s responsibility increases.
+
+💡 Real-World Example Summary
+Scenario	Type	Your Responsibility	Provider’s Responsibility
+You host your own server in your office	On-premises	Everything (hardware, OS, patches, data)	None
+You rent a VM on Azure and install your app	IaaS	OS updates, app, and data	Hardware, virtualization
+You use Azure App Service to host your web app	PaaS	App code and data	OS, runtime, hardware
+You use Microsoft 365 for email and docs	SaaS	Data (emails, files), user access	Everything else
+🧠 In Simple Words:
+
+The Shared Responsibility Model ensures security and management tasks are clearly divided between you and the cloud provider —
+helping both sides know exactly what they must protect and maintain.
