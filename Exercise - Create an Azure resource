@@ -1,0 +1,133 @@
+Here’s a **simple and clear explanation** of the **Exercise – Create an Azure Resource**, with **steps, visuals, and examples** for easy understanding 👇
+
+---
+
+## 🧠 **Goal of the Exercise**
+
+To **create a Virtual Machine (VM)** using the **Azure Portal**, observe how **Azure automatically creates related resources**, and learn how to **clean up** afterward.
+
+---
+
+## ⚙️ **1. What You’ll Learn**
+
+* How to create a **Resource Group**
+* How to create a **Virtual Machine (VM)**
+* How Azure automatically creates related resources (like disks, network interfaces, etc.)
+* How to **delete the resource group** to clean up all related resources
+
+---
+
+## 🪜 **2. Steps to Create a Virtual Machine**
+
+### 🧩 **Step 1: Sign in**
+
+* Go to [Azure Portal](https://portal.azure.com)
+* Sign in with your Azure account
+
+---
+
+### 💻 **Step 2: Create a Virtual Machine**
+
+**Navigation:**
+**Home → Create a resource → Compute → Virtual Machine → Create**
+
+Then fill the **Basics tab** as follows 👇
+
+| Setting                         | Value                                   |
+| ------------------------------- | --------------------------------------- |
+| **Subscription**                | Choose your available subscription      |
+| **Resource Group**              | **Create new → Name it `IntroAzureRG`** |
+| **Virtual Machine Name**        | `my-VM`                                 |
+| **Region**                      | Leave default                           |
+| **Availability Options / Zone** | Leave default                           |
+| **Security Type**               | Default                                 |
+| **Image**                       | Default (Windows/Linux OS image)        |
+| **VM Architecture**             | Default                                 |
+| **Azure Spot Discount**         | Leave unchecked                         |
+| **Size**                        | Default                                 |
+| **Authentication Type**         | Password                                |
+| **Username**                    | `azureuser`                             |
+| **Password**                    | Create a secure password                |
+| **Public Inbound Ports**        | None                                    |
+| **Review + Create**             | Click **Create**                        |
+
+> 💡 **Tip:**
+> If you’re using a **Microsoft Learn Sandbox**, this is **free** and no real billing occurs.
+
+---
+
+### ⚡ **Step 3: Wait for Deployment**
+
+* Azure shows **“Deployment in progress…”**
+* Once done, you’ll see **“Deployment is complete.”**
+* ✅ You’ve successfully created the **VM and its related resources!**
+
+---
+
+## 📦 **3. Verify Resources Created**
+
+**Navigation:**
+**Home → Resource Groups → IntroAzureRG**
+
+Here you’ll see **multiple items** — not just the VM.
+
+| Resource Type          | Example Name   | Description                          |
+| ---------------------- | -------------- | ------------------------------------ |
+| Virtual Machine        | `my-VM`        | The compute resource you created     |
+| Network Interface      | `my-VM-nic`    | Connects the VM to a virtual network |
+| Public IP              | `my-VM-ip`     | Provides external access             |
+| Network Security Group | `my-VM-nsg`    | Controls inbound/outbound traffic    |
+| Disk                   | `my-VM_disk1`  | OS disk attached to the VM           |
+| Virtual Network        | `my-VM-vnet`   | Network environment for your VM      |
+| Subnet                 | `my-VM-subnet` | Logical segment within the VNet      |
+
+🧠 **Concept:**
+All these related components are **automatically grouped** inside the **Resource Group** you chose (`IntroAzureRG`).
+
+---
+
+## 🧭 **4. Visual Flow (Creation Process)**
+
+```
+Create Virtual Machine
+│
+├── Creates a Resource Group (IntroAzureRG)
+│     ├── Virtual Machine (my-VM)
+│     ├── Network Interface (my-VM-nic)
+│     ├── Virtual Network (my-VM-vnet)
+│     ├── Subnet (my-VM-subnet)
+│     ├── Public IP (my-VM-ip)
+│     ├── Network Security Group (my-VM-nsg)
+│     └── Disk (my-VM_disk1)
+│
+└── All resources grouped together for easier management
+```
+
+---
+
+## 🧹 **5. Clean-Up (Very Important!)**
+
+To avoid costs or keep your sandbox tidy:
+
+1. Go to **Azure Portal → Resource Groups → IntroAzureRG**
+2. Click **Delete Resource Group**
+3. Type **IntroAzureRG** to confirm
+4. Click **Delete**
+
+💡 **Why?**
+Deleting a **Resource Group** automatically deletes **all resources inside it** — making cleanup easy.
+
+---
+
+## ✅ **6. Key Takeaways**
+
+| Concept            | Summary                                            |
+| ------------------ | -------------------------------------------------- |
+| **Resource Group** | Logical container that holds all related resources |
+| **VM Creation**    | Automatically creates multiple dependent resources |
+| **Cleanup**        | Deleting the RG removes everything inside          |
+| **Sandbox**        | Safe to practice — no actual billing!              |
+
+---
+
+Would you like me to create a **PowerPoint (PPT)** version of this exercise with screenshots, icons, and flow diagrams for your Azure learning or training presentation?
