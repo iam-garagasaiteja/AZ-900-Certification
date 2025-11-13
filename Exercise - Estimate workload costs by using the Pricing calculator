@@ -1,0 +1,102 @@
+🧠 Goal
+
+Estimate the cost of running a basic web application on Microsoft Azure using the Pricing Calculator.
+
+🌐 Scenario: A Basic Web App
+Component	Function
+ASP.NET Web App (Windows)	Displays product inventory and pricing
+2 Virtual Machines (VMs)	Host the web app and share traffic
+Load Balancer	Distributes network traffic evenly
+SQL Database	Stores inventory and pricing information
+
+🖼️ Azure Migration Setup
+
+On-Premises → Azure Cloud
+---------------------------------
+Web App (VMs) → Azure Virtual Machines
+Load Balancer → Azure Application Gateway
+SQL Database → Azure SQL Database
+
+⚙️ Requirements
+Requirement	Details
+Accessibility	Internal (not public-facing)
+VM usage	2 VMs, running 24x7 (≈730 hrs/month)
+Network traffic	~1 TB/month
+Database storage	Up to 32 GB
+Performance	Standard, not high-performance
+💻 Steps in the Pricing Calculator
+🧩 Step 1: Go to Azure Pricing Calculator
+🧩 Step 2: Add Services
+
+From Products tab, select:
+
+Category	Service
+Compute	Virtual Machines
+Databases	Azure SQL Database
+Networking	Application Gateway
+⚙️ Step 3: Configure Each Service
+🖥️ Virtual Machines
+Setting	Value
+Region	West US
+Operating System	Windows
+Tier	Standard
+Instance	D2 v3
+VMs	2 x 730 hours
+Other	Default
+🗄️ Azure SQL Database
+Setting	Value
+Region	West US
+Type	Single Database
+Backup Storage Tier	RA-GRS
+Purchase Model	vCore
+Service Tier	General Purpose
+Compute Tier	Provisioned
+Generation	Gen 5
+Instance	8 vCore
+🌉 Application Gateway
+Setting	Value
+Region	West US
+Tier	Web Application Firewall
+Size	Medium
+Gateway Hours	2 x 730 hours
+Data Processed	1 TB
+Outbound Data Transfer	5 GB
+📊 Step 4: Review the Estimate
+
+At the bottom of the calculator:
+
+Total Estimated Monthly Cost is displayed.
+
+You can change currency (e.g., USD, INR).
+
+💼 Step 5: Save, Share, or Export
+Option	Description
+Export	Download as Excel
+Save / Save As	Store estimate for later under “Saved Estimates”
+Share	Generate a shareable link for your team
+✅ Outcome
+
+You’ve created a cost estimate for running your web application on Azure.
+You can now:
+
+Adjust configurations to see cost impact.
+
+Compare different regions or VM sizes.
+
+Plan budgets before deployment.
+
+🧩 Visual Summary: Flow of Estimation
+flowchart LR
+A[Define Requirements] --> B[Go to Azure Pricing Calculator]
+B --> C[Add Services (VMs, SQL DB, App Gateway)]
+C --> D[Configure Each Service]
+D --> E[View Estimated Cost]
+E --> F[Save / Export / Share Estimate]
+
+💡 Pro Tips
+
+Use “Example Scenarios” in the calculator to explore common setups.
+
+Use Reserved Instances or Spot Pricing for long-term savings.
+
+After deployment, use Azure Cost Management to track real expenses.
