@@ -1,0 +1,86 @@
+Here’s a **simple and structured explanation** of the **Azure Pricing Calculator** topic — ideal for notes, PPT, or quick revision 👇
+
+---
+
+## 💰 **Explore the Azure Pricing Calculator**
+
+*(Completed – 100 XP – 2 minutes)*
+
+---
+
+### 🧭 **What is the Azure Pricing Calculator?**
+
+The **Azure Pricing Calculator** is a **free online tool** that helps estimate the cost of Azure services **before** you deploy them.
+It lets you explore different resource configurations and understand potential monthly costs.
+
+🔗 **Website:** [https://azure.microsoft.com/en-us/pricing/calculator](https://azure.microsoft.com/en-us/pricing/calculator)
+
+---
+
+### ⚙️ **Purpose**
+
+* To **estimate costs** for different Azure services (Compute, Storage, Databases, Networking, etc.)
+* To **compare regions, configurations, and pricing tiers**
+* To **plan budgets** before deployment
+* To **customize scenarios** for multiple services in one estimate
+
+---
+
+### 🧩 **Key Features**
+
+| Feature                   | Description                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| **Add Services**          | Add Azure services like VMs, SQL Databases, Storage Accounts, etc. to your estimate |
+| **Region Selection**      | Choose Azure regions (prices vary by region)                                        |
+| **Configuration Options** | Modify VM size, OS, storage redundancy, access tier, etc.                           |
+| **Cost Breakdown**        | View hourly, monthly, or annual cost estimates                                      |
+| **Export & Share**        | Save or export the pricing estimate to Excel for planning                           |
+| **Currency Selection**    | View costs in your preferred local currency                                         |
+| **Support Plans**         | Include Azure support pricing if needed                                             |
+
+---
+
+### 🧮 **Example Use Case**
+
+| Step | Example                                                                              |
+| ---- | ------------------------------------------------------------------------------------ |
+| 1️⃣  | Go to the **Azure Pricing Calculator** website                                       |
+| 2️⃣  | Click **+ Add Products**                                                             |
+| 3️⃣  | Choose **Virtual Machine**                                                           |
+| 4️⃣  | Select **Region: Central India**, **VM size: D2s_v3**, **OS: Windows**               |
+| 5️⃣  | Choose **1-year Reserved Instance** for savings                                      |
+| 6️⃣  | The calculator displays an **estimated monthly cost** for the VM                     |
+| 7️⃣  | Add additional resources like **Storage** or **Network Bandwidth** to see total cost |
+
+---
+
+### 💡 **Important Notes**
+
+* The calculator is for **estimation only** — it doesn’t create or charge for any resources.
+* The **Total Cost of Ownership (TCO)** calculator is now **retired**.
+* You can use it to estimate **end-to-end workload costs** before deployment.
+
+---
+
+### 📊 **Benefits**
+
+| Benefit             | Explanation                                                |
+| ------------------- | ---------------------------------------------------------- |
+| **Transparency**    | Know the cost before deploying any resource                |
+| **Customization**   | Adjust parameters and instantly see impact on cost         |
+| **Comparison**      | Evaluate cost differences across regions or configurations |
+| **Budget Planning** | Helps forecast operational expenses for your organization  |
+
+---
+
+### 🧠 **Pro Tip**
+
+Combine the **Pricing Calculator** with **Azure Cost Management + Billing** after deployment to:
+
+* Track real costs
+* Set budgets
+* Optimize ongoing expenses
+
+---
+
+Would you like me to make a **one-slide PowerPoint** summarizing this (with a calculator icon, flow diagram of cost estimation steps, and key features)? It will be perfect for your training deck.
