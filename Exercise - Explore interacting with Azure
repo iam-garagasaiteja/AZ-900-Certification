@@ -1,0 +1,79 @@
+Here’s a **simple, structured explanation** of using **BASH in the Azure CLI** along with a **table** and **flow diagram** to make it easy to remember 👇
+
+---
+
+## 🖥️ **1. Switching Between CLI Modes**
+
+| Mode                 | How to Enter                     | Prompt Example      | Common Use                                       |
+| -------------------- | -------------------------------- | ------------------- | ------------------------------------------------ |
+| **PowerShell CLI**   | Default (or type `pwsh` in Bash) | `PS /home/user>`    | For PowerShell-specific commands like `Get-Date` |
+| **BASH CLI**         | Type `bash` in PowerShell        | `username@azure:~$` | For Linux-style commands like `date`             |
+| **Interactive Mode** | Type `az interactive`            | `az>>`              | For guided, auto-complete Azure commands         |
+
+---
+
+## ⚙️ **2. Example Commands**
+
+| Task                      | PowerShell Command | BASH Command     |
+| ------------------------- | ------------------ | ---------------- |
+| Get current date/time     | `Get-Date`         | `date`           |
+| Update Azure CLI          | `az upgrade`       | `az upgrade`     |
+| Switch back to PowerShell | —                  | `pwsh`           |
+| Enter Interactive Mode    | `az interactive`   | `az interactive` |
+| Exit Interactive Mode     | `exit`             | `exit`           |
+
+---
+
+## 💡 **3. Azure CLI Interactive Mode**
+
+Interactive mode acts like a **mini IDE** inside your terminal.
+
+### ✨ Features:
+
+* **Auto-completion** for commands
+* **Command descriptions** and **examples**
+* **No need to type `az`** before commands
+
+**Steps to use:**
+
+1. Type `az interactive`
+2. Choose whether to send telemetry (YES/NO)
+3. Wait for initialization
+4. Type a letter (like `a`) to test auto-complete
+5. Try commands such as `upgrade` or `version`
+6. Type `exit` to quit
+
+---
+
+## 🔄 **4. CLI Flow Summary**
+
+```
+Start Azure Cloud Shell
+│
+├── PowerShell Mode (default)
+│     ├── Run PowerShell commands (e.g., Get-Date)
+│     └── To switch → type "bash"
+│
+├── BASH Mode
+│     ├── Run Linux commands (e.g., date)
+│     ├── Azure commands start with "az"
+│     └── To switch back → type "pwsh"
+│
+└── Interactive Mode
+      ├── Enter with "az interactive"
+      ├── Get auto-suggestions
+      └── Exit with "exit"
+```
+
+---
+
+## ✅ **5. Key Takeaways**
+
+* **PowerShell = Windows style**, uses commands like `Get-Date`
+* **BASH = Linux style**, uses commands like `date`
+* **Interactive Mode = Beginner-friendly**, offers hints and auto-completion
+* You can **switch freely** between modes (`bash`, `pwsh`, `az interactive`)
+
+---
+
+Would you like me to convert this into a **PowerPoint slide** with diagrams and icons (for learning/training presentation use)?
