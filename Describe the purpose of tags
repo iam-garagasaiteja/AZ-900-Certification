@@ -1,0 +1,110 @@
+🌟 Describe the Purpose of Tags in Azure
+
+As your cloud footprint grows, proper organization becomes essential for managing resources, costs, security, and governance.
+Azure Tags are key-value pairs that you apply to resources to attach meaningful metadata.
+
+🎯 What Are Tags Used For?
+
+Tags help classify, organize, and manage Azure resources across multiple workloads and environments. They provide flexibility beyond subscriptions and resource groups.
+
+🧩 1. Resource Management
+
+Tags let you identify resources linked to:
+
+Specific workloads
+
+Environments such as Dev, QA, Prod
+
+Business units
+
+Application owners
+
+👉 This helps search, filter, and perform actions on related resources easily.
+
+💰 2. Cost Management & Optimization
+
+Tags allow you to:
+
+Group resources by cost center
+
+Build reports by department/team
+
+Track budgets and forecast costs
+
+Chargeback or showback costs
+
+👉 Helps organizations understand who is spending what.
+
+🛠️ 3. Operations Management
+
+Tags help categorize resources by operational importance:
+
+Mission-critical
+
+High-impact
+
+Low-impact
+
+👉 Useful for setting SLAs, performing capacity planning, or mapping availability priorities.
+
+🔐 4. Security Classification
+
+Tags identify the security level of data or workloads:
+
+Public
+
+Internal
+
+Confidential
+
+👉 Enables better access control and security posture management.
+
+📜 5. Governance & Compliance
+
+Tags help ensure adherence to standards:
+
+They support compliance frameworks like ISO 27001.
+
+Azure Policy can enforce mandatory tags (e.g., Owner, Department).
+
+Policies can automatically reapply missing tags.
+
+👉 Ensures consistent governance at scale.
+
+🤖 6. Workload Optimization & Automation
+
+Tags can link resources to:
+
+Workloads or applications
+
+Deployment pipelines
+
+Automation tasks (using Azure DevOps / Scripts)
+
+👉 Enables bulk automation—for example, shutting down all resources with Environment = Dev.
+
+🏷️ Example Tag Structure
+Tag Name	Purpose
+AppName	Application that the resource supports
+CostCenter	Internal billing code
+Owner	Business owner or responsible person
+Environment	Dev / Test / Prod
+Impact	Mission-critical / High-impact / Low-impact
+
+📌 Not all tags need to apply to all resources—only use what provides value.
+
+🔧 How to Manage Tags
+
+You can manage tags using:
+
+Azure Portal
+
+Azure CLI
+
+PowerShell
+
+ARM Templates
+
+REST API
+
+Tags do not inherit automatically from subscriptions or resource groups, giving you the flexibility to design your own tagging hierarchy.
